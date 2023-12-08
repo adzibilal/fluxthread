@@ -128,7 +128,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2'>
+                    <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2'>
                         <div className='text-center sm:text-left'>
                             <p className='text-lg font-medium text-gray-900'>
                                 About Us
@@ -165,49 +165,6 @@ const Footer = () => {
                                         href='/'>
                                         {' '}
                                         Careers{' '}
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className='text-center sm:text-left'>
-                            <p className='text-lg font-medium text-gray-900'>
-                                Our Services
-                            </p>
-
-                            <ul className='mt-8 space-y-4 text-sm'>
-                                <li>
-                                    <a
-                                        className='text-gray-700 transition hover:text-gray-700/75'
-                                        href='/'>
-                                        Web Development
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a
-                                        className='text-gray-700 transition hover:text-gray-700/75'
-                                        href='/'>
-                                        {' '}
-                                        Web Design{' '}
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a
-                                        className='text-gray-700 transition hover:text-gray-700/75'
-                                        href='/'>
-                                        {' '}
-                                        Marketing{' '}
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a
-                                        className='text-gray-700 transition hover:text-gray-700/75'
-                                        href='/'>
-                                        {' '}
-                                        Google Ads{' '}
                                     </a>
                                 </li>
                             </ul>

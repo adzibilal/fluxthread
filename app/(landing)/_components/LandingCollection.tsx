@@ -1,8 +1,9 @@
+import Image from 'next/image'
 import React from 'react'
 
 const LandingCollection = () => {
     return (
-        <section>
+        <section id='landingCollection'>
             <div className='mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8'>
                 <header className='text-center'>
                     <h2 className='text-xl font-bold text-gray-900 sm:text-3xl'>
@@ -17,12 +18,21 @@ const LandingCollection = () => {
                 </header>
 
                 <ul className='mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
-                    <li>
-                        <a href='#' className='group block overflow-hidden'>
-                            <img
-                                src='https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+                <li>
+                        <a href='#' className='group block overflow-hidden relative'>
+                            <Image
+                                width={500}
+                                height={500}
+                                src='/images/product/1.png'
                                 alt=''
-                                className='h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]'
+                                className='w-full aspect-square object-cover transition duration-500'
+                            />
+                            <Image
+                                width={500}
+                                height={500}
+                                src='/images/product/model1.png'
+                                alt=''
+                                className='w-full aspect-square object-cover transition duration-500 hidden group-hover:block absolute top-0 left-0'
                             />
 
                             <div className='relative bg-white pt-3'>
@@ -38,19 +48,27 @@ const LandingCollection = () => {
 
                                     <span className='tracking-wider text-gray-900'>
                                         {' '}
-                                        £24.00 GBP{' '}
+                                        Rp 169.980,00 {' '}
                                     </span>
                                 </p>
                             </div>
                         </a>
                     </li>
-
                     <li>
-                        <a href='#' className='group block overflow-hidden'>
-                            <img
-                                src='https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+                        <a href='#' className='group block overflow-hidden relative'>
+                            <Image
+                                width={500}
+                                height={500}
+                                src='/images/product/2.png'
                                 alt=''
-                                className='h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]'
+                                className='w-full aspect-square object-cover transition duration-500'
+                            />
+                            <Image
+                                width={500}
+                                height={500}
+                                src='/images/product/model2.png'
+                                alt=''
+                                className='w-full aspect-square object-cover transition duration-500 hidden group-hover:block absolute top-0 left-0'
                             />
 
                             <div className='relative bg-white pt-3'>
@@ -66,19 +84,27 @@ const LandingCollection = () => {
 
                                     <span className='tracking-wider text-gray-900'>
                                         {' '}
-                                        £24.00 GBP{' '}
+                                        Rp 169.980,00 {' '}
                                     </span>
                                 </p>
                             </div>
                         </a>
                     </li>
-
                     <li>
-                        <a href='#' className='group block overflow-hidden'>
-                            <img
-                                src='https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+                        <a href='#' className='group block overflow-hidden relative'>
+                            <Image
+                                width={500}
+                                height={500}
+                                src='/images/product/3.png'
                                 alt=''
-                                className='h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]'
+                                className='w-full aspect-square object-cover transition duration-500'
+                            />
+                            <Image
+                                width={500}
+                                height={500}
+                                src='/images/product/model3.png'
+                                alt=''
+                                className='w-full aspect-square object-cover transition duration-500 hidden group-hover:block absolute top-0 left-0'
                             />
 
                             <div className='relative bg-white pt-3'>
@@ -94,19 +120,27 @@ const LandingCollection = () => {
 
                                     <span className='tracking-wider text-gray-900'>
                                         {' '}
-                                        £24.00 GBP{' '}
+                                        Rp 169.980,00 {' '}
                                     </span>
                                 </p>
                             </div>
                         </a>
                     </li>
-
                     <li>
-                        <a href='#' className='group block overflow-hidden'>
-                            <img
-                                src='https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+                        <a href='#' className='group block overflow-hidden relative'>
+                            <Image
+                                width={500}
+                                height={500}
+                                src='/images/product/1.png'
                                 alt=''
-                                className='h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]'
+                                className='w-full aspect-square object-cover transition duration-500'
+                            />
+                            <Image
+                                width={500}
+                                height={500}
+                                src='/images/product/model1.png'
+                                alt=''
+                                className='w-full aspect-square object-cover transition duration-500 hidden group-hover:block absolute top-0 left-0'
                             />
 
                             <div className='relative bg-white pt-3'>
@@ -122,12 +156,13 @@ const LandingCollection = () => {
 
                                     <span className='tracking-wider text-gray-900'>
                                         {' '}
-                                        £24.00 GBP{' '}
+                                        Rp 169.980,00 {' '}
                                     </span>
                                 </p>
                             </div>
                         </a>
                     </li>
+                    
                 </ul>
             </div>
         </section>

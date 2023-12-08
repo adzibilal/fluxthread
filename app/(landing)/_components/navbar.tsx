@@ -2,8 +2,10 @@ import Image from 'next/image'
 import React from 'react'
 import { BiSearch, BiUser, BiCart } from 'react-icons/bi'
 import Search from './Search'
+import { navbarLinks } from '@/utils'
 
 const Navbar = () => {
+
     return (
         <header className='bg-white sticky top-0 z-30'>
             <div className='mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8'>
@@ -24,59 +26,16 @@ const Navbar = () => {
                     <div className='md:flex md:items-center md:gap-12'>
                         <nav aria-label='Global' className='hidden md:block'>
                             <ul className='flex items-center gap-6 text-sm'>
-                                <li>
+                            {navbarLinks.map((route, index) => (
+                                <li key={index}>
                                     <a
                                         className='text-gray-500 transition hover:text-gray-500/75'
-                                        href='/'>
-                                        {' '}
-                                        About{' '}
+                                        href={route.path}>
+                                        {route.label}
                                     </a>
                                 </li>
-
-                                <li>
-                                    <a
-                                        className='text-gray-500 transition hover:text-gray-500/75'
-                                        href='/'>
-                                        {' '}
-                                        Careers{' '}
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a
-                                        className='text-gray-500 transition hover:text-gray-500/75'
-                                        href='/'>
-                                        {' '}
-                                        History{' '}
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a
-                                        className='text-gray-500 transition hover:text-gray-500/75'
-                                        href='/'>
-                                        {' '}
-                                        Services{' '}
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a
-                                        className='text-gray-500 transition hover:text-gray-500/75'
-                                        href='/'>
-                                        {' '}
-                                        Projects{' '}
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a
-                                        className='text-gray-500 transition hover:text-gray-500/75'
-                                        href='/'>
-                                        {' '}
-                                        Blog{' '}
-                                    </a>
-                                </li>
+                            ))}
+                               
                             </ul>
                         </nav>
 
